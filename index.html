@@ -184,87 +184,6 @@
   background: #B8000E;
 }
 
-  </style>
-</head>
-<body>
-  <header>
-
-<a href="#home" class="brand">
-  <img src="logo.png" alt="Logo ADE DI ESTREFI ERJON">
-  <div class="brand-text">
-    <span class="brand-name">ADE DI ESTREFI ERJON</span>
-    <span class="brand-subtitle">CARPENTERIA METALLICA</span>
-  </div>
-</a>
-
-    
-<nav class="main-nav">
-  <a href="#home">Home</a>
-  <a href="#azienda">Chi siamo</a>
-  <a href="#servizi">Servizi</a>
-  <a href="#realizzazioni">Realizzazioni</a>
-  <a href="#contatti">Contatti</a>
-  <a href="#contatti" class="nav-cta">Richiedi un preventivo</a>
-</nav>
-
-  </header>
-
-  <main>
-    <div class="hero" id="home">
-      <h1>Carpenteria metallica e strutture in acciaio</h1>
-      <p>Soluzioni professionali per strutture metalliche, capannoni industriali, recinzioni, cancelli e lavorazioni su misura.</p>
-      <a class="btn" href="#contatti">Richiedi un preventivo</a>
-    </div>
-
-    <section id="azienda">
-      <h2>Chi siamo</h2>
-      <p>ADE DI ESTREFI ERJON opera nel settore della carpenteria metallica, offrendo soluzioni per progetti industriali, commerciali e privati.</p>
-    </section>
-
-    
-<section id="servizi" class="services-section">
-  <h2>I nostri servizi</h2>
-  <p class="section-intro">
-    Soluzioni su misura per progetti industriali,
-    commerciali e residenziali.
-  </p>
-
-  <div class="service-grid">
-    <article class="service-card">
-      <img src="images/strutture/capannone-05.png" alt="Strutture metalliche">
-      <h3>Strutture Metalliche</h3>
-    </article>
-
-    <article class="service-card">
-      <img src="images/recinzioni/recinzioni-01.png" alt="Recinzioni metalliche">
-      <h3>Recinzioni Metalliche</h3>
-    </article>
-
-    <article class="service-card">
-      <img src="images/cancelli/porte%20metalliche%20-01.png" alt="Cancelli e porte">
-      <h3>Cancelli e Porte Metalliche</h3>
-    </article>
-
-    <article class="service-card">
-      <img src="images/ringhiere/ringhiere.png" alt="Ringhiere e parapetti">
-      <h3>Ringhiere e Parapetti</h3>
-    </article>
-
-    <article class="service-card">
-      <img src="images/pergole/pergola.png" alt="Pergole e coperture">
-      <h3>Pergole e Coperture</h3>
-    </article>
-
-    <article class="service-card">
-      <img src="images/facciate/facciate-0.1.png" alt="Facciate metalliche">
-      <h3>Facciate e Rivestimenti</h3>
-    </article>
-
-    <article class="service-card">
-      <img src="images/scale/scale%20metalliche%200.1.png" alt="Scale metalliche">
-      <h3>Scale Metalliche</h3>
-    </article>
-  </div>
 .services-section {
   background: #f6f7f9;
 }
@@ -320,6 +239,187 @@
   }
 }
 
+.about-section {
+  background: #ffffff;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.section-label {
+  color: #E60012;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.about-text h2 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.about-text h3 {
+  font-size: 23px;
+  line-height: 1.4;
+  color: #30363B;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #626b73;
+}
+
+.about-btn {
+  margin-top: 18px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 850px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-image img {
+    height: 320px;
+  }
+
+  .about-text h2 {
+    font-size: 34px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+
+<a href="#home" class="brand">
+  <img src="logo.png" alt="Logo ADE DI ESTREFI ERJON">
+  <div class="brand-text">
+    <span class="brand-name">ADE DI ESTREFI ERJON</span>
+    <span class="brand-subtitle">CARPENTERIA METALLICA</span>
+  </div>
+</a>
+
+    
+<nav class="main-nav">
+  <a href="#home">Home</a>
+  <a href="#azienda">Chi siamo</a>
+  <a href="#servizi">Servizi</a>
+  <a href="#realizzazioni">Realizzazioni</a>
+  <a href="#contatti">Contatti</a>
+  <a href="#contatti" class="nav-cta">Richiedi un preventivo</a>
+</nav>
+
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <h1>Carpenteria metallica e strutture in acciaio</h1>
+      <p>Soluzioni professionali per strutture metalliche, capannoni industriali, recinzioni, cancelli e lavorazioni su misura.</p>
+      <a class="btn" href="#contatti">Richiedi un preventivo</a>
+    </div>
+
+   
+<section id="azienda" class="about-section">
+  <div class="about-content">
+    <div class="about-text">
+      <span class="section-label">LA NOSTRA AZIENDA</span>
+      <h2>Chi siamo</h2>
+      <h3>Competenza, precisione e qualità nelle lavorazioni metalliche.</h3>
+
+      <p>
+        ADE DI ESTREFI ERJON è un'azienda specializzata
+        nella carpenteria metallica e nella realizzazione
+        di strutture in acciaio su misura.
+      </p>
+
+      <p>
+        Realizziamo capannoni industriali, recinzioni,
+        cancelli, ringhiere, scale metalliche,
+        coperture e rivestimenti, offrendo soluzioni
+        per il settore industriale, commerciale e privato.
+      </p>
+
+      <p>
+        Seguiamo ogni progetto con attenzione,
+        dalla lavorazione dei materiali fino alla
+        realizzazione e al montaggio, con particolare
+        cura per la precisione e la qualità del risultato.
+      </p>
+
+      <a href="#contatti" class="btn about-btn">
+        Contattaci
+      </a>
+    </div>
+
+    <div class="about-image">
+      <img
+        src="images/strutture/capannone-05.png"
+        alt="Realizzazione struttura metallica ADE DI ESTREFI ERJON"
+      >
+    </div>
+  </div>
+</section>
+
+
+    
+<section id="servizi" class="services-section">
+  <h2>I nostri servizi</h2>
+  <p class="section-intro">
+    Soluzioni su misura per progetti industriali,
+    commerciali e residenziali.
+  </p>
+
+  <div class="service-grid">
+    <article class="service-card">
+      <img src="images/strutture/capannone-05.png" alt="Strutture metalliche">
+      <h3>Strutture Metalliche</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/recinzioni/recinzioni-01.png" alt="Recinzioni metalliche">
+      <h3>Recinzioni Metalliche</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/cancelli/porte%20metalliche%20-01.png" alt="Cancelli e porte">
+      <h3>Cancelli e Porte Metalliche</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/ringhiere/ringhiere.png" alt="Ringhiere e parapetti">
+      <h3>Ringhiere e Parapetti</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/pergole/pergola.png" alt="Pergole e coperture">
+      <h3>Pergole e Coperture</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/facciate/facciate-0.1.png" alt="Facciate metalliche">
+      <h3>Facciate e Rivestimenti</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/scale/scale%20metalliche%200.1.png" alt="Scale metalliche">
+      <h3>Scale Metalliche</h3>
+    </article>
+  </div>
 </section>
 
     <section id="realizzazioni">
