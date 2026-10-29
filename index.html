@@ -11,7 +11,18 @@
     header { background: #30363B; color: white; padding: 22px 7%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
     header strong { font-size: 22px; }
     nav a { color: white; text-decoration: none; margin-right: 16px; }
-    .hero { background: linear-gradient(120deg,#30363B,#526778); color: white; padding: 110px 7%; }
+    
+.hero {
+  background:
+    linear-gradient(90deg, rgba(15, 25, 35, 0.80), rgba(15, 25, 35, 0.15)),
+    url("images/strutture/capannone-05.png") center center / cover no-repeat;
+  color: white;
+  padding: 150px 7%;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;}
+
     .hero h1 { font-size: clamp(32px,5vw,58px); max-width: 850px; }
     .hero p { font-size: 20px; max-width: 680px; line-height: 1.6; }
     .btn { display: inline-block; background: #E60012; color: white; padding: 15px 24px; text-decoration: none; border-radius: 5px; }
