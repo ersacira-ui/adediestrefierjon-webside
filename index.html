@@ -376,6 +376,61 @@
   color: #E60012;
 }
 
+#service-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  background: #f6f7f9;
+  padding: 70px 7% 50px;
+}
+
+#service-viewer h2 {
+  color: #30363B;
+  margin: 0 0 30px;
+}
+
+.service-viewer-close {
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  background: #E60012;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.service-viewer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.service-viewer-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 850px) {
+  .service-viewer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .service-viewer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -464,37 +519,39 @@
 </p>
 
   <div class="service-grid">
-    <article class="service-card">
+    
+<article class="service-card" onclick="openService('strutture')">
+
       <img src="images/strutture/capannone-05.png" alt="Strutture metalliche">
       <h3>Strutture Metalliche</h3>
     </article>
 
-    <article class="service-card">
+   <article class="service-card" onclick="openService('recinzioni')">
       <img src="images/recinzioni/recinzioni-01.png" alt="Recinzioni metalliche">
       <h3>Recinzioni Metalliche</h3>
     </article>
 
-    <article class="service-card">
+    <article class="service-card" onclick="openService('cancelli')">
       <img src="images/cancelli/porte%20metalliche%20-01.png" alt="Cancelli e porte">
       <h3>Cancelli e Porte Metalliche</h3>
     </article>
 
-    <article class="service-card">
+    <article class="service-card" onclick="openService('ringhiere')">
       <img src="images/ringhiere/ringhiere.png" alt="Ringhiere e parapetti">
       <h3>Ringhiere e Parapetti</h3>
     </article>
 
-    <article class="service-card">
+    <article class="service-card" onclick="openService('pergole')">
       <img src="images/pergole/pergola.png" alt="Pergole e coperture">
       <h3>Pergole e Coperture</h3>
     </article>
 
-    <article class="service-card">
+    <article class="service-card" onclick="openService('facciate')">
       <img src="images/facciate/facciate-0.1.png" alt="Facciate metalliche">
       <h3>Facciate e Rivestimenti</h3>
     </article>
 
-    <article class="service-card">
+    <article class="service-card" onclick="openService('scale')">
       <img src="images/scale/scale%20metalliche%200.1.png" alt="Scale metalliche">
       <h3>Scale Metalliche</h3>
     </article>
@@ -513,6 +570,97 @@
   </footer>
   
 <script>
+const servicePhotos = {
+  strutture: Array.from({length: 14}, (_, i) =>
+    `images/strutture/capannone-${String(i + 1).padStart(2, "0")}.png`
+  ).concat(["images/strutture/carburante%20.png"]),
+
+  recinzioni: Array.from({length: 14}, (_, i) =>
+    `images/recinzioni/recinzioni-${String(i + 1).padStart(2, "0")}.png`
+  ),
+
+  cancelli: [
+    "images/cancelli/porrte%20metalliche%200.6.png",
+    ...Array.from({length: 5}, (_, i) =>
+      `images/cancelli/porte%20metalliche%20-0${i + 1}.png`
+    )
+  ],
+
+  ringhiere: [
+    "images/ringhiere/Sunlit%20Mediterranean%20Apartment%20Facade.png",
+    "images/ringhiere/ringhiere%20.png",
+    ...Array.from({length: 4}, (_, i) =>
+      `images/ringhiere/ringhiere%20e%20parapeti-0${i + 1}.png`
+    ),
+    "images/ringhiere/ringhiere%20e%20parapeti.png",
+    "images/ringhiere/ringhiere.png"
+  ],
+
+  pergole: [
+    "images/pergole/Sunlit%20Garden%20Pergola%20and%20Mountain%20Vista.png",
+    "images/pergole/pergola.png"
+  ],
+
+  facciate: [
+    "images/facciate/facciate-0.1.png"
+  ],
+
+  scale: [
+    "images/scale/Scale%20metalliche%200.4.png",
+    "images/scale/scale%20metaliche%200.2.png",
+    "images/scale/scale%20metalliche%200.1.png",
+    "images/scale/scale%20metalliche%200.3.png"
+  ]
+};
+
+function openService(category) {
+  const photos = servicePhotos[category];
+  if (!photos) return;
+
+  let viewer = document.getElementById("service-viewer");
+
+  if (!viewer) {
+    viewer = document.createElement("div");
+    viewer.id = "service-viewer";
+    document.body.appendChild(viewer);
+  }
+
+  const title = document.querySelector(
+    `.service-card[onclick="openService('${category}')"] h3`
+  )?.textContent || "I nostri lavori";
+
+  viewer.innerHTML = "";
+
+  const close = document.createElement("button");
+  close.className = "service-viewer-close";
+  close.textContent = "×";
+  close.setAttribute("aria-label", "Chiudi");
+  close.onclick = () => viewer.remove();
+
+  const heading = document.createElement("h2");
+  heading.textContent = title;
+
+  const gallery = document.createElement("div");
+  gallery.className = "service-viewer-grid";
+
+  photos.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = title;
+    img.loading = "lazy";
+    gallery.appendChild(img);
+  });
+
+  viewer.append(close, heading, gallery);
+
+  document.addEventListener("keydown", function esc(e) {
+    if (e.key === "Escape") {
+      viewer.remove();
+      document.removeEventListener("keydown", esc);
+    }
+  });
+}
+
 function filterGallery(category) {
   const images = document.querySelectorAll('.gallery-item');
   const buttons = document.querySelectorAll('.gallery-filters button');
