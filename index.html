@@ -6,6 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ADE DI ESTREFI ERJON | Carpenteria Metallica</title>
   <style>
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #ff6570;
+}
+
+.main-nav .nav-cta {
+  background: #E60012;
+  color: white;
+  padding: 13px 18px;
+  border-radius: 6px;
+}
+
+.main-nav .nav-cta:hover {
+  background: #bf0010;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    gap: 14px;
+  }
+
+  .main-nav a {
+    font-size: 12px;
+  }
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -135,13 +177,16 @@
   </div>
 </a>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#azienda">Chi siamo</a>
-      <a href="#servizi">Servizi</a>
-      <a href="#realizzazioni">Realizzazioni</a>
-      <a href="#contatti">Contatti</a>
-    </nav>
+    
+<nav class="main-nav">
+  <a href="#home">Home</a>
+  <a href="#azienda">Chi siamo</a>
+  <a href="#servizi">Servizi</a>
+  <a href="#realizzazioni">Realizzazioni</a>
+  <a href="#contatti">Contatti</a>
+  <a href="#contatti" class="nav-cta">Richiedi un preventivo</a>
+</nav>
+
   </header>
 
   <main>
