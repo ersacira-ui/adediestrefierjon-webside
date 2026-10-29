@@ -361,6 +361,21 @@
   }
 }
 
+.services-hint {
+  color: #E60012;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.service-card {
+  cursor: pointer;
+}
+
+.service-card:hover h3 {
+  color: #E60012;
+}
+
   </style>
 </head>
 <body>
@@ -444,6 +459,10 @@
     commerciali e residenziali.
   </p>
 
+<p class="services-hint">
+  Seleziona un servizio per visualizzare i nostri lavori.
+</p>
+
   <div class="service-grid">
     <article class="service-card">
       <img src="images/strutture/capannone-05.png" alt="Strutture metalliche">
@@ -482,86 +501,6 @@
   </div>
 </section>
 
-    <section id="realizzazioni">
-<h2>Le nostre realizzazioni</h2>
-  <p>Scopri alcuni dei nostri lavori di carpenteria metallica.</p>
-
-  <div class="gallery-filters">
-    <button onclick="filterGallery('all')">Tutti</button>
-    <button onclick="filterGallery('strutture')">Strutture Metalliche</button>
-    <button onclick="filterGallery('recinzioni')">Recinzioni Metalliche</button>
-    <button onclick="filterGallery('cancelli')">Cancelli e Porte Metalliche</button>
-    <button onclick="filterGallery('ringhiere')">Ringhiere e Parapetti</button>
-    <button onclick="filterGallery('pergole')">Pergole e Coperture</button>
-    <button onclick="filterGallery('facciate')">Facciate e Rivestimenti Metallici</button>
-    <button onclick="filterGallery('scale')">Scale Metalliche e Scale di Emergenza</button>
-  </div>
-
-  <div class="gallery">   
-<img class="gallery-item strutture" src="images/strutture/capannone-01.png" alt="Capannone industriale 01">
-<img class="gallery-item strutture" src="images/strutture/capannone-02.png" alt="Capannone industriale 02">
-<img class="gallery-item strutture" src="images/strutture/capannone-03.png" alt="Capannone industriale 03">
-<img class="gallery-item strutture" src="images/strutture/capannone-04.png" alt="Capannone industriale 04">
-<img class="gallery-item strutture" src="images/strutture/capannone-05.png" alt="Capannone industriale 05">
-<img class="gallery-item strutture" src="images/strutture/capannone-06.png" alt="Capannone industriale 06">
-<img class="gallery-item strutture" src="images/strutture/capannone-07.png" alt="Capannone industriale 07">
-<img class="gallery-item strutture" src="images/strutture/capannone-08.png" alt="Capannone industriale 08">
-<img class="gallery-item strutture" src="images/strutture/capannone-09.png" alt="Capannone industriale 09">
-<img class="gallery-item strutture" src="images/strutture/capannone-10.png" alt="Capannone industriale 10">
-<img class="gallery-item strutture" src="images/strutture/capannone-11.png" alt="Capannone industriale 11">
-<img class="gallery-item strutture" src="images/strutture/capannone-12.png" alt="Capannone industriale 12">
-<img class="gallery-item strutture" src="images/strutture/capannone-13.png" alt="Capannone industriale 13">
-<img class="gallery-item strutture" src="images/strutture/capannone-14.png" alt="Capannone industriale 14">
-<img class="gallery-item strutture" src="images/strutture/carburante%20.png" alt="Struttura metallica">
-
-    <img class="gallery-item scale" src="images/scale/Scale%20metalliche%200.4.png" alt="Scala metallica"> 
-<img class="gallery-item scale" src="images/scale/scale%20metaliche%200.2.png" alt="Scala metallica">
-    <img class="gallery-item scale" src="images/scale/scale%20metalliche%200.1.png" alt="Scala metallica">
-    <img class="gallery-item scale" src="images/scale/scale%20metalliche%200.3.png" alt="Scala metallica">
-<img class="gallery-item ringhiere" src="images/ringhiere/Sunlit%20Mediterranean%20Apartment%20Facade.png" alt="Ringhiere per balconi">
-<img class="gallery-item ringhiere" src="images/ringhiere/ringhiere%20.png" alt="Ringhiere metalliche">
-<img class="gallery-item ringhiere" src="images/ringhiere/ringhiere%20e%20parapeti-01.png" alt="Ringhiere e parapetti 01">
-<img class="gallery-item ringhiere" src="images/ringhiere/ringhiere%20e%20parapeti-02.png" alt="Ringhiere e parapetti 02">
-<img class="gallery-item ringhiere" src="images/ringhiere/ringhiere%20e%20parapeti-03.png" alt="Ringhiere e parapetti 03">
-<img class="gallery-item ringhiere" src="images/ringhiere/ringhiere%20e%20parapeti-04.png" alt="Ringhiere e parapetti 04">
-<img class="gallery-item ringhiere" src="images/ringhiere/ringhiere%20e%20parapeti.png" alt="Ringhiere e parapetti">
-<img class="gallery-item ringhiere" src="images/ringhiere/ringhiere.png" alt="Ringhiere metalliche">
-
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-01.png" alt="Recinzione metallica 01">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-02.png" alt="Recinzione metallica 02">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-03.png" alt="Recinzione metallica 03">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-04.png" alt="Recinzione metallica 04">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-05.png" alt="Recinzione metallica 05">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-06.png" alt="Recinzione metallica 06">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-07.png" alt="Recinzione metallica 07">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-08.png" alt="Recinzione metallica 08">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-09.png" alt="Recinzione metallica 09">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-10.png" alt="Recinzione metallica 10">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-11.png" alt="Recinzione metallica 11">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-12.png" alt="Recinzione metallica 12">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-13.png" alt="Recinzione metallica 13">
-<img class="gallery-item recinzioni" src="images/recinzioni/recinzioni-14.png" alt="Recinzione metallica 14">
-
-<img class="gallery-item pergole" src="images/pergole/Sunlit%20Garden%20Pergola%20and%20Mountain%20Vista.png" alt="Pergola metallica moderna">
-
-<img class="gallery-item pergole" src="images/pergole/pergola.png" alt="Pergola e copertura metallica">
-
-<img class="gallery-item facciate" src="images/facciate/facciate-0.1.png" alt="Facciate e rivestimenti metallici">
-
-<img class="gallery-item cancelli" src="images/cancelli/porrte%20metalliche%200.6.png" alt="Porta metallica">
-
-<img class="gallery-item cancelli" src="images/cancelli/porte%20metalliche%20-01.png" alt="Porta metallica 01">
-
-<img class="gallery-item cancelli" src="images/cancelli/porte%20metalliche%20-02.png" alt="Porta metallica 02">
-
-<img class="gallery-item cancelli" src="images/cancelli/porte%20metalliche%20-03.png" alt="Porta metallica 03">
-
-<img class="gallery-item cancelli" src="images/cancelli/porte%20metalliche%20-04.png" alt="Porta metallica 04">
-
-<img class="gallery-item cancelli" src="images/cancelli/porte%20metalliche%20-05.png" alt="Porta metallica 05">
-
-  </div>
-</section>
     <section class="contact" id="contatti">
       <h2>Contattaci</h2>
       <p>Richiedi informazioni o un preventivo per il tuo progetto.</p>
