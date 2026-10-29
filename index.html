@@ -6,6 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ADE DI ESTREFI ERJON | Carpenteria Metallica</title>
   <style>
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.brand img {
+  width: 75px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.brand-name {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.brand-subtitle {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #d5d9dd;
+}
+
+@media (max-width: 600px) {
+  .brand-name {
+    font-size: 15px;
+  }
+
+  .brand-subtitle {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .brand img {
+    width: 55px;
+  }
+}
+
     * { box-sizing: border-box; }
     body { margin: 0; font-family: Arial, sans-serif; color: #222; }
     header { background: #30363B; color: white; padding: 22px 7%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
@@ -80,10 +127,13 @@
 <body>
   <header>
 
-<a href="#" aria-label="ADE DI ESTREFI ERJON - Home">
-  <img src="logo.png" alt="ADE DI ESTREFI ERJON" style="width:110px; height:auto; display:block;">
+<a href="#home" class="brand">
+  <img src="logo.png" alt="Logo ADE DI ESTREFI ERJON">
+  <div class="brand-text">
+    <span class="brand-name">ADE DI ESTREFI ERJON</span>
+    <span class="brand-subtitle">CARPENTERIA METALLICA</span>
+  </div>
 </a>
-
 
     <nav>
       <a href="#home">Home</a>
