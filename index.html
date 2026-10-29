@@ -221,15 +221,107 @@
       <p>ADE DI ESTREFI ERJON opera nel settore della carpenteria metallica, offrendo soluzioni per progetti industriali, commerciali e privati.</p>
     </section>
 
-    <section id="servizi">
-      <h2>I nostri servizi</h2>
-      <div class="services">
-        <div class="service"><h3>Strutture metalliche</h3><p>Realizzazione di strutture in acciaio su misura.</p></div>
-        <div class="service"><h3>Capannoni industriali</h3><p>Carpenteria per edifici industriali e agricoli.</p></div>
-        <div class="service"><h3>Recinzioni e cancelli</h3><p>Soluzioni metalliche per aziende e privati.</p></div>
-        <div class="service"><h3>Scale e ringhiere</h3><p>Lavorazioni metalliche personalizzate.</p></div>
-      </div>
-    </section>
+    
+<section id="servizi" class="services-section">
+  <h2>I nostri servizi</h2>
+  <p class="section-intro">
+    Soluzioni su misura per progetti industriali,
+    commerciali e residenziali.
+  </p>
+
+  <div class="service-grid">
+    <article class="service-card">
+      <img src="images/strutture/capannone-05.png" alt="Strutture metalliche">
+      <h3>Strutture Metalliche</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/recinzioni/recinzioni-01.png" alt="Recinzioni metalliche">
+      <h3>Recinzioni Metalliche</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/cancelli/porte%20metalliche%20-01.png" alt="Cancelli e porte">
+      <h3>Cancelli e Porte Metalliche</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/ringhiere/ringhiere.png" alt="Ringhiere e parapetti">
+      <h3>Ringhiere e Parapetti</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/pergole/pergola.png" alt="Pergole e coperture">
+      <h3>Pergole e Coperture</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/facciate/facciate-0.1.png" alt="Facciate metalliche">
+      <h3>Facciate e Rivestimenti</h3>
+    </article>
+
+    <article class="service-card">
+      <img src="images/scale/scale%20metalliche%200.1.png" alt="Scale metalliche">
+      <h3>Scale Metalliche</h3>
+    </article>
+  </div>
+.services-section {
+  background: #f6f7f9;
+}
+
+.section-intro {
+  color: #626b73;
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 22px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.14);
+}
+
+.service-card img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  padding: 22px;
+  margin: 0;
+  border-bottom: 4px solid #E60012;
+}
+
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</section>
+
     <section id="realizzazioni">
 <h2>Le nostre realizzazioni</h2>
   <p>Scopri alcuni dei nostri lavori di carpenteria metallica.</p>
