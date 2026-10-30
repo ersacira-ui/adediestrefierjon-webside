@@ -1,73 +1,997 @@
-Logo ADE DI ESTREFI ERJON
-ADE DI ESTREFI ERJON
-CARPENTERIA METALLICA
-Home
-Chi siamo
-Servizi
-Realizzazioni
-Contatti
-Carpenteria metallica e strutture in acciaio
 
-Soluzioni professionali per strutture metalliche, capannoni industriali, recinzioni, cancelli e lavorazioni su misura.
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ADE DI ESTREFI ERJON - Carpenteria metallica, strutture in acciaio, capannoni industriali, recinzioni, cancelli, ringhiere e lavorazioni su misura.">
+  <title>ADE DI ESTREFI ERJON | Carpenteria Metallica</title>
 
-Richiedi un preventivo
-LA NOSTRA AZIENDA
-Chi siamo
-Competenza, precisione e qualità nelle lavorazioni metalliche.
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-ADE DI ESTREFI ERJON è un'azienda specializzata nella carpenteria metallica e nella realizzazione di strutture in acciaio su misura.
+    html {
+      scroll-behavior: smooth;
+    }
 
-Realizziamo capannoni industriali, recinzioni, cancelli, ringhiere, scale metalliche, coperture e rivestimenti, offrendo soluzioni per il settore industriale, commerciale e privato.
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #252a30;
+      background: #ffffff;
+    }
 
-Seguiamo ogni progetto con attenzione, dalla lavorazione dei materiali fino alla realizzazione e al montaggio, con particolare cura per la precisione e la qualità del risultato.
+    a {
+      text-decoration: none;
+    }
 
-Contattaci
-Realizzazione struttura metallica ADE DI ESTREFI ERJON
-I nostri servizi
+    button,
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+    }
 
-Soluzioni su misura per progetti industriali, commerciali e residenziali.
+    /* HEADER BIANCO */
 
-Seleziona un servizio per visualizzare i nostri lavori.
+    header {
+      background: #ffffff;
+      color: #252a30;
+      padding: 16px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #e8eaed;
+      position: relative;
+      z-index: 10;
+    }
 
-Strutture metalliche
-Strutture Metalliche
-Recinzioni metalliche
-Recinzioni Metalliche
-Cancelli e porte
-Cancelli e Porte Metalliche
-Ringhiere e parapetti
-Ringhiere e Parapetti
-Pergole e coperture
-Pergole e Coperture
-Facciate metalliche
-Facciate e Rivestimenti
-Scale metalliche
-Scale Metalliche
-✉
-ADE DI ESTREFI ERJON
-Parliamo del tuo prossimo progetto.
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #252a30;
+      min-width: 0;
+    }
 
-Dalle strutture metalliche industriali alle lavorazioni su misura, siamo a tua disposizione per trasformare le tue idee in soluzioni concrete. Raccontaci il tuo progetto e richiedi un preventivo personalizzato.
+    .brand img {
+      width: 85px;
+      height: 75px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
 
-CONTATTACI VIA EMAIL
-info@adediestrefierjon.it
-Richiedi un preventivo
-Compila il modulo. Ti ricontatteremo al più presto.
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
 
-Nome e cognome *
+    .brand-name {
+      color: #252a30;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+    }
 
-Azienda
+    .brand-subtitle {
+      color: #68717a;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+    }
 
-Email *
+    .main-nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
 
-Telefono
+    .main-nav a {
+      color: #252a30;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
 
-Località del progetto
+    .main-nav a:hover {
+      color: #e60012;
+    }
 
-Tipo di lavorazione *
+    /* HERO */
 
-Descrizione del progetto *
+    .hero {
+      min-height: 650px;
+      padding: 120px 7%;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(15, 25, 35, 0.83),
+          rgba(15, 25, 35, 0.15)
+        ),
+        url("images/strutture/capannone-13.png")
+        center center / cover no-repeat;
 
-Invia richiesta di preventivo
-Hai disegni PDF, DWG o fotografie? Puoi inviarli a info@adediestrefierjon.it
-© 2026 ADE DI ESTREFI ERJON — Tutti i diritti riservati.
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 60px);
+      line-height: 1.13;
+      max-width: 850px;
+      margin: 0 0 25px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      line-height: 1.75;
+      max-width: 680px;
+      margin: 0 0 32px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #e60012;
+      color: #ffffff;
+      padding: 16px 27px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #b90010;
+    }
+
+    section {
+      padding: 85px 7%;
+    }
+
+    .section-label {
+      color: #e60012;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    /* CHI SIAMO */
+
+    .about-section {
+      background: #ffffff;
+    }
+
+    .about-content {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 65px;
+    }
+
+    .about-text h2 {
+      font-size: clamp(32px, 4vw, 44px);
+      margin: 15px 0;
+      color: #252a30;
+    }
+
+    .about-text h3 {
+      font-size: 22px;
+      line-height: 1.45;
+      color: #30363b;
+      margin-bottom: 22px;
+    }
+
+    .about-text p {
+      color: #626b73;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .about-btn {
+      margin-top: 20px;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+      display: block;
+    }
+
+    /* SERVIZI */
+
+    .services-section {
+      background: #f6f7f9;
+    }
+
+    .services-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .services-section h2 {
+      font-size: clamp(32px, 4vw, 42px);
+      margin: 0 0 15px;
+    }
+
+    .section-intro {
+      color: #626b73;
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .services-hint {
+      color: #e60012;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+    }
+
+    .service-card img {
+      display: block;
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      padding: 22px;
+      margin: 0;
+      border-bottom: 4px solid #e60012;
+      color: #252a30;
+    }
+
+    .service-card:hover h3 {
+      color: #e60012;
+    }
+
+    /* GALLERIA DEI SERVIZI */
+
+    #service-viewer {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      overflow-y: auto;
+      background: #f6f7f9;
+      padding: 75px 7% 50px;
+    }
+
+    #service-viewer h2 {
+      font-size: 34px;
+      color: #30363b;
+      margin: 0 0 30px;
+    }
+
+    .service-viewer-close {
+      position: fixed;
+      top: 15px;
+      right: 25px;
+      background: #e60012;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 32px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      z-index: 10000;
+    }
+
+    .service-viewer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .service-viewer-grid img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    }
+
+    /* CONTATTI */
+
+    .contact {
+      background: #24282d;
+      color: #ffffff;
+      padding: 90px 6%;
+    }
+
+    .contact-layout {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .contact-info {
+      max-width: 500px;
+    }
+
+    .contact-symbol {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: rgba(230, 0, 18, 0.12);
+      color: #ff626c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    .contact-eyebrow {
+      color: #ff626c;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .contact-info h2 {
+      font-size: clamp(30px, 3.5vw, 48px);
+      line-height: 1.15;
+      margin: 18px 0 25px;
+      color: #ffffff;
+    }
+
+    .contact-info > p {
+      color: #d0d3d6;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .contact-details {
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-details span {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: #aeb5bb;
+      font-weight: 700;
+    }
+
+    .contact-details a {
+      color: #ffffff;
+      font-size: clamp(16px, 2vw, 21px);
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-details a:hover {
+      color: #ff626c;
+    }
+
+    .contact-form-card {
+      background: #ffffff;
+      color: #252525;
+      padding: 42px;
+      border-radius: 14px;
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.14);
+    }
+
+    .contact-form-card h3 {
+      color: #20242a;
+      font-size: 27px;
+      margin: 0 0 10px;
+    }
+
+    .contact-form-card > p {
+      color: #777777;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .contact-form-card form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      min-width: 0;
+    }
+
+    .form-field label {
+      font-size: 14px;
+      font-weight: 700;
+      color: #292929;
+    }
+
+    .form-field label span {
+      color: #e60012;
+    }
+
+    .contact-form-card input,
+    .contact-form-card select,
+    .contact-form-card textarea {
+      width: 100%;
+      border: 1px solid #e0e2e5;
+      border-radius: 7px;
+      background: #ffffff;
+      color: #242424;
+      padding: 14px 16px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .contact-form-card input:focus,
+    .contact-form-card select:focus,
+    .contact-form-card textarea:focus {
+      border-color: #e60012;
+      box-shadow: 0 0 0 3px rgba(230, 0, 18, 0.08);
+    }
+
+    .contact-form-card textarea {
+      resize: vertical;
+    }
+
+    .contact-submit {
+      width: 100%;
+      background: #e60012;
+      color: #ffffff;
+      border: none;
+      border-radius: 7px;
+      padding: 17px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .contact-submit:hover {
+      background: #bb0010;
+    }
+
+    .contact-attachment-note {
+      color: #777777;
+      font-size: 12px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .contact-attachment-note a {
+      color: #c90012;
+      overflow-wrap: anywhere;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #30363b;
+      color: #ffffff;
+      padding: 30px 7%;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+      .contact-layout {
+        gap: 40px;
+      }
+
+      .main-nav {
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .about-content,
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info {
+        max-width: 100%;
+      }
+
+      .service-grid,
+      .service-viewer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 15px 5%;
+      }
+
+      .brand img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .brand-name {
+        font-size: 15px;
+      }
+
+      .brand-subtitle {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+      }
+
+      .main-nav {
+        gap: 14px;
+      }
+
+      .main-nav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 550px;
+        padding: 90px 6%;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 65px 6%;
+      }
+
+      .about-image img {
+        height: 300px;
+      }
+
+      .service-grid,
+      .service-viewer-grid,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        padding: 65px 5%;
+      }
+
+      .contact-form-card {
+        padding: 25px 20px;
+      }
+
+      #service-viewer {
+        padding: 80px 5% 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <a href="#home" class="brand">
+      <img src="logo.png" alt="Logo ADE DI ESTREFI ERJON">
+
+      <div class="brand-text">
+        <span class="brand-name">ADE DI ESTREFI ERJON</span>
+        <span class="brand-subtitle">CARPENTERIA METALLICA</span>
+      </div>
+    </a>
+
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#azienda">Chi siamo</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#servizi">Realizzazioni</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+
+    <div class="hero" id="home">
+      <h1>Carpenteria metallica e strutture in acciaio</h1>
+
+      <p>
+        Soluzioni professionali per strutture metalliche,
+        capannoni industriali, recinzioni, cancelli
+        e lavorazioni su misura.
+      </p>
+
+      <a class="btn" href="#contatti">
+        Richiedi un preventivo
+      </a>
+    </div>
+
+    <!-- CHI SIAMO -->
+
+    <section id="azienda" class="about-section">
+      <div class="about-content">
+
+        <div class="about-text">
+          <span class="section-label">LA NOSTRA AZIENDA</span>
+
+          <h2>Chi siamo</h2>
+
+          <h3>
+            Competenza, precisione e qualità
+            nelle lavorazioni metalliche.
+          </h3>
+
+          <p>
+            ADE DI ESTREFI ERJON è un'azienda specializzata
+            nella carpenteria metallica e nella realizzazione
+            di strutture in acciaio su misura.
+          </p>
+
+          <p>
+            Realizziamo capannoni industriali, recinzioni,
+            cancelli, ringhiere, scale metalliche,
+            coperture e rivestimenti, offrendo soluzioni
+            per il settore industriale, commerciale e privato.
+          </p>
+
+          <p>
+            Seguiamo ogni progetto con attenzione,
+            dalla lavorazione dei materiali fino alla
+            realizzazione e al montaggio, con particolare
+            cura per la precisione e la qualità del risultato.
+          </p>
+
+          <a href="#contatti" class="btn about-btn">
+            Contattaci
+          </a>
+        </div>
+
+        <div class="about-image">
+          <img
+            src="images/strutture/capannone-05.png"
+            alt="Realizzazione struttura metallica ADE DI ESTREFI ERJON"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVIZI -->
+
+    <section id="servizi" class="services-section">
+      <div class="services-inner">
+
+        <h2>I nostri servizi</h2>
+
+        <p class="section-intro">
+          Soluzioni su misura per progetti industriali,
+          commerciali e residenziali.
+        </p>
+
+        <p class="services-hint">
+          Seleziona un servizio per visualizzare i nostri lavori.
+        </p>
+
+        <div class="service-grid">
+
+          <article class="service-card" onclick="openService('strutture')">
+            <img src="images/strutture/capannone-05.png" alt="Strutture metalliche">
+            <h3>Strutture Metalliche</h3>
+          </article>
+
+          <article class="service-card" onclick="openService('recinzioni')">
+            <img src="images/recinzioni/recinzioni-01.png" alt="Recinzioni metalliche">
+            <h3>Recinzioni Metalliche</h3>
+          </article>
+
+          <article class="service-card" onclick="openService('cancelli')">
+            <img src="images/cancelli/porte%20metalliche%20-01.png" alt="Cancelli e porte">
+            <h3>Cancelli e Porte Metalliche</h3>
+          </article>
+
+          <article class="service-card" onclick="openService('ringhiere')">
+            <img src="images/ringhiere/ringhiere.png" alt="Ringhiere e parapetti">
+            <h3>Ringhiere e Parapetti</h3>
+          </article>
+
+          <article class="service-card" onclick="openService('pergole')">
+            <img src="images/pergole/pergola.png" alt="Pergole e coperture">
+            <h3>Pergole e Coperture</h3>
+          </article>
+
+          <article class="service-card" onclick="openService('facciate')">
+            <img src="images/facciate/facciate-0.1.png" alt="Facciate metalliche">
+            <h3>Facciate e Rivestimenti</h3>
+          </article>
+
+          <article class="service-card" onclick="openService('scale')">
+            <img src="images/scale/scale%20metalliche%200.1.png" alt="Scale metalliche">
+            <h3>Scale Metalliche</h3>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+
+    <section class="contact" id="contatti">
+      <div class="contact-layout">
+
+        <div class="contact-info">
+          <div class="contact-symbol">✉</div>
+
+          <span class="contact-eyebrow">
+            ADE DI ESTREFI ERJON
+          </span>
+
+          <h2>Parliamo del tuo prossimo progetto.</h2>
+
+          <p>
+            Dalle strutture metalliche industriali alle
+            lavorazioni su misura, siamo a tua disposizione
+            per trasformare le tue idee in soluzioni concrete.
+            Raccontaci il tuo progetto e richiedi un
+            preventivo personalizzato.
+          </p>
+
+          <div class="contact-details">
+            <span>CONTATTACI VIA EMAIL</span>
+
+            <a href="mailto:info@adediestrefierjon.it">
+              info@adediestrefierjon.it
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Richiedi un preventivo</h3>
+
+          <p>
+            Compila il modulo. Ti ricontatteremo al più presto.
+          </p>
+
+          <form action="https://formspree.io/f/xoeenwer" method="POST">
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nome">Nome e cognome <span>*</span></label>
+                <input type="text" id="nome" name="nome"
+                       placeholder="Mario Rossi" required>
+              </div>
+
+              <div class="form-field">
+                <label for="azienda">Azienda</label>
+                <input type="text" id="azienda" name="azienda"
+                       placeholder="Nome azienda">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email <span>*</span></label>
+                <input type="email" id="email" name="email"
+                       placeholder="nome@azienda.it" required>
+              </div>
+
+              <div class="form-field">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono"
+                       placeholder="+39">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="localita">Località del progetto</label>
+              <input type="text" id="localita" name="localita"
+                     placeholder="Es. Bari, Puglia">
+            </div>
+
+            <div class="form-field">
+              <label for="servizio">Tipo di lavorazione <span>*</span></label>
+
+              <select id="servizio" name="servizio" required>
+                <option value="">Seleziona un servizio</option>
+                <option>Strutture metalliche</option>
+                <option>Recinzioni metalliche</option>
+                <option>Cancelli metallici</option>
+                <option>Ringhiere e parapetti</option>
+                <option>Pergole e tettoie</option>
+                <option>Facciate metalliche</option>
+                <option>Scale metalliche</option>
+                <option>Altro</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="messaggio">
+                Descrizione del progetto <span>*</span>
+              </label>
+
+              <textarea
+                id="messaggio"
+                name="messaggio"
+                rows="5"
+                placeholder="Descrivi il tuo progetto, le dimensioni e le lavorazioni richieste..."
+                required
+              ></textarea>
+            </div>
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nuova richiesta preventivo - ADE DI ESTREFI ERJON"
+            >
+
+            <button type="submit" class="contact-submit">
+              Invia richiesta di preventivo
+            </button>
+
+            <p class="contact-attachment-note">
+              Hai disegni PDF, DWG o fotografie?
+              Puoi inviarli a
+              <a href="mailto:info@adediestrefierjon.it">
+                info@adediestrefierjon.it
+              </a>.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 ADE DI ESTREFI ERJON — Tutti i diritti riservati.
+  </footer>
+
+  <!-- GALLERIE FOTOGRAFICHE -->
+
+  <script>
+    const servicePhotos = {
+      strutture: Array.from({length: 14}, (_, i) =>
+        `images/strutture/capannone-${String(i + 1).padStart(2, "0")}.png`
+      ).concat(["images/strutture/carburante%20.png"]),
+
+      recinzioni: Array.from({length: 14}, (_, i) =>
+        `images/recinzioni/recinzioni-${String(i + 1).padStart(2, "0")}.png`
+      ),
+
+      cancelli: [
+        "images/cancelli/porrte%20metalliche%200.6.png",
+        ...Array.from({length: 5}, (_, i) =>
+          `images/cancelli/porte%20metalliche%20-0${i + 1}.png`
+        )
+      ],
+
+      ringhiere: [
+        "images/ringhiere/Sunlit%20Mediterranean%20Apartment%20Facade.png",
+        "images/ringhiere/ringhiere%20.png",
+        ...Array.from({length: 4}, (_, i) =>
+          `images/ringhiere/ringhiere%20e%20parapeti-0${i + 1}.png`
+        ),
+        "images/ringhiere/ringhiere%20e%20parapeti.png",
+        "images/ringhiere/ringhiere.png"
+      ],
+
+      pergole: [
+        "images/pergole/Sunlit%20Garden%20Pergola%20and%20Mountain%20Vista.png",
+        "images/pergole/pergola.png"
+      ],
+
+      facciate: [
+        "images/facciate/facciate-0.1.png"
+      ],
+
+      scale: [
+        "images/scale/Scale%20metalliche%200.4.png",
+        "images/scale/scale%20metaliche%200.2.png",
+        "images/scale/scale%20metalliche%200.1.png",
+        "images/scale/scale%20metalliche%200.3.png"
+      ]
+    };
+
+    function openService(category) {
+      const photos = servicePhotos[category];
+      if (!photos) return;
+
+      let viewer = document.getElementById("service-viewer");
+
+      if (!viewer) {
+        viewer = document.createElement("div");
+        viewer.id = "service-viewer";
+        document.body.appendChild(viewer);
+      }
+
+      const card = document.querySelector(
+        `.service-card[onclick="openService('${category}')"] h3`
+      );
+
+      const title = card ? card.textContent : "I nostri lavori";
+
+      viewer.innerHTML = "";
+
+      const close = document.createElement("button");
+      close.className = "service-viewer-close";
+      close.textContent = "×";
+      close.setAttribute("aria-label", "Chiudi");
+      close.onclick = () => viewer.remove();
+
+      const heading = document.createElement("h2");
+      heading.textContent = title;
+
+      const gallery = document.createElement("div");
+      gallery.className = "service-viewer-grid";
+
+      photos.forEach(src => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = title;
+        img.loading = "lazy";
+        gallery.appendChild(img);
+      });
+
+      viewer.append(close, heading, gallery);
+
+      document.addEventListener("keydown", function esc(e) {
+        if (e.key === "Escape") {
+          viewer.remove();
+          document.removeEventListener("keydown", esc);
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
