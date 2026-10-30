@@ -486,6 +486,83 @@
   padding: 16px 28px;
 }
 
+.preventivo-form {
+  max-width: 720px;
+  margin: 55px 0 0;
+  padding: 35px;
+  background: #ffffff;
+  color: #252525;
+  border-radius: 12px;
+}
+
+.preventivo-form h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #252525;
+}
+
+.preventivo-form > p {
+  color: #666;
+}
+
+.preventivo-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.preventivo-form label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.preventivo-form input,
+.preventivo-form select,
+.preventivo-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  font: inherit;
+  background: #fff;
+  color: #222;
+}
+
+.preventivo-form button {
+  background: #e60012;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.preventivo-form button:hover {
+  background: #bd0010;
+}
+
+.preventivo-form .form-note {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 20px;
+  color: #666;
+}
+
+.preventivo-form .form-note a {
+  color: #c60012;
+}
+
+@media (max-width: 600px) {
+  .preventivo-form {
+    padding: 22px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -635,6 +712,63 @@
       Richiedi un preventivo
     </a>
   </div>
+<div class="preventivo-form">
+  <h3>Richiedi un preventivo gratuito</h3>
+  <p>Compila il modulo e raccontaci il tuo progetto.</p>
+
+  <form action="https://formspree.io/f/xoeenwer"
+        method="POST">
+
+    <label for="nome">Nome e cognome *</label>
+    <input type="text" id="nome" name="nome"
+           placeholder="Nome e cognome" required>
+
+    <label for="azienda">Azienda</label>
+    <input type="text" id="azienda" name="azienda"
+           placeholder="Nome azienda">
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email"
+           placeholder="La tua email" required>
+
+    <label for="telefono">Telefono</label>
+    <input type="tel" id="telefono" name="telefono"
+           placeholder="+39">
+
+    <label for="servizio">Tipo di lavorazione *</label>
+    <select id="servizio" name="servizio" required>
+      <option value="">Seleziona un servizio</option>
+      <option>Strutture metalliche</option>
+      <option>Recinzioni metalliche</option>
+      <option>Cancelli metallici</option>
+      <option>Ringhiere e parapetti</option>
+      <option>Pergole e tettoie</option>
+      <option>Facciate metalliche</option>
+      <option>Scale metalliche</option>
+      <option>Altro</option>
+    </select>
+
+    <label for="messaggio">Descrizione del progetto *</label>
+    <textarea id="messaggio" name="messaggio"
+              rows="6"
+              placeholder="Descrivi il tuo progetto..."
+              required></textarea>
+
+    <input type="hidden" name="_subject"
+           value="Nuova richiesta preventivo - ADE DI ESTREFI ERJON">
+
+    <button type="submit">Invia richiesta</button>
+  </form>
+
+  <p class="form-note">
+    Per inviare disegni PDF, DWG o fotografie,
+    scrivici a
+    <a href="mailto:info@adediestrefierjon.it">
+      info@adediestrefierjon.it
+    </a>.
+  </p>
+</div>
+
 </section>
 
   </main>
