@@ -563,6 +563,216 @@
   }
 }
 
+/* CONTATTI - DESIGN PROFESSIONALE */
+
+.contact {
+  background: #24282d;
+  padding: 90px 6%;
+  color: #fff;
+}
+
+.contact-layout {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.contact-info {
+  max-width: 500px;
+}
+
+.contact-symbol {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(230, 0, 18, 0.12);
+  color: #f04450;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.contact-eyebrow {
+  color: #ff626c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contact-info h2 {
+  font-size: clamp(30px, 3.5vw, 48px);
+  line-height: 1.15;
+  margin: 18px 0 25px;
+  color: #fff;
+}
+
+.contact-info > p {
+  color: #d0d3d6;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.contact-details {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-details span {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #aeb5bb;
+  font-weight: 700;
+}
+
+.contact-details a {
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(16px, 2vw, 21px);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.contact-details a:hover {
+  color: #ff626c;
+}
+
+.contact-form-card {
+  background: #fff;
+  color: #252525;
+  padding: 42px;
+  border-radius: 14px;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.14);
+}
+
+.contact-form-card h3 {
+  color: #20242a;
+  font-size: 27px;
+  margin: 0 0 10px;
+}
+
+.contact-form-card > p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.contact-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #292929;
+}
+
+.form-field label span {
+  color: #e60012;
+}
+
+.contact-form-card input,
+.contact-form-card select,
+.contact-form-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e2e5;
+  border-radius: 7px;
+  background: #fff;
+  color: #242424;
+  padding: 14px 16px;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact-form-card input:focus,
+.contact-form-card select:focus,
+.contact-form-card textarea:focus {
+  border-color: #e60012;
+  box-shadow: 0 0 0 3px rgba(230, 0, 18, 0.08);
+}
+
+.contact-form-card textarea {
+  resize: vertical;
+}
+
+.contact-submit {
+  width: 100%;
+  background: #e60012;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 17px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-submit:hover {
+  background: #bb0010;
+}
+
+.contact-form-card .contact-attachment-note {
+  color: #777;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.contact-attachment-note a {
+  color: #c90012;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .contact-info {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 65px 5%;
+  }
+
+  .contact-form-card {
+    padding: 24px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -689,64 +899,112 @@
     </article>
   </div>
 
+
 <section class="contact" id="contatti">
-  <div class="contact-content">
-    <span class="section-label">PARLIAMO DEL TUO PROGETTO</span>
-    <h2>Contattaci</h2>
+  <div class="contact-layout">
 
-    <p>
-      Hai un progetto di carpenteria metallica?
-      Contattaci per informazioni, consulenze
-      e preventivi personalizzati.
-    </p>
+    <div class="contact-info">
+      <div class="contact-symbol">✉</div>
+      <span class="contact-eyebrow">ADE DI ESTREFI ERJON</span>
+      <h2>Parliamo del tuo prossimo progetto.</h2>
 
-    <div class="contact-email">
-      <span>EMAIL AZIENDALE</span>
-      <a href="mailto:info@adediestrefierjon.it">
-        info@adediestrefierjon.it
-      </a>
+      <p>
+        Dalle strutture metalliche industriali alle
+        lavorazioni su misura, siamo a tua disposizione
+        per trasformare le tue idee in soluzioni concrete.
+        Raccontaci il tuo progetto e richiedi un
+        preventivo personalizzato.
+      </p>
+
+      <div class="contact-details">
+        <span>CONTATTACI VIA EMAIL</span>
+        <a href="mailto:info@adediestrefierjon.it">
+          info@adediestrefierjon.it
+        </a>
+      </div>
     </div>
 
-    <a class="btn contact-btn"
-       href="mailto:info@adediestrefierjon.it?subject=Richiesta%20di%20preventivo">
-      Richiedi un preventivo
-    </a>
+    <div class="contact-form-card">
+      <h3>Richiedi un preventivo</h3>
+      <p>Compila il modulo. Ti ricontatteremo al più presto.</p>
+
+      <form action="https://formspree.io/f/xoeenwer" method="POST">
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="nome">Nome e cognome <span>*</span></label>
+            <input type="text" id="nome" name="nome"
+                   placeholder="Mario Rossi" required>
+          </div>
+
+          <div class="form-field">
+            <label for="azienda">Azienda</label>
+            <input type="text" id="azienda" name="azienda"
+                   placeholder="Nome azienda">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email">Email <span>*</span></label>
+            <input type="email" id="email" name="email"
+                   placeholder="nome@azienda.it" required>
+          </div>
+
+          <div class="form-field">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono"
+                   placeholder="+39">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="localita">Località del progetto</label>
+          <input type="text" id="localita" name="localita"
+                 placeholder="Es. Bari, Puglia">
+        </div>
+
+        <div class="form-field">
+          <label for="servizio">Tipo di lavorazione <span>*</span></label>
+          <select id="servizio" name="servizio" required>
+            <option value="">Seleziona un servizio</option>
+            <option>Strutture metalliche</option>
+            <option>Recinzioni metalliche</option>
+            <option>Cancelli metallici</option>
+            <option>Ringhiere e parapetti</option>
+            <option>Pergole e tettoie</option>
+            <option>Facciate metalliche</option>
+            <option>Scale metalliche</option>
+            <option>Altro</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="messaggio">Descrizione del progetto <span>*</span></label>
+          <textarea id="messaggio" name="messaggio" rows="5"
+                    placeholder="Descrivi il tuo progetto, le dimensioni e le lavorazioni richieste..."
+                    required></textarea>
+        </div>
+
+        <input type="hidden" name="_subject"
+               value="Nuova richiesta preventivo - ADE DI ESTREFI ERJON">
+
+        <button type="submit" class="contact-submit">
+          Invia richiesta di preventivo
+        </button>
+
+        <p class="contact-attachment-note">
+          Hai disegni PDF, DWG o fotografie?
+          Puoi inviarli a
+          <a href="mailto:info@adediestrefierjon.it">
+            info@adediestrefierjon.it
+          </a>
+        </p>
+      </form>
+    </div>
+
   </div>
-<div class="preventivo-form">
-  <h3>Richiedi un preventivo gratuito</h3>
-  <p>Compila il modulo e raccontaci il tuo progetto.</p>
-
-  <form action="https://formspree.io/f/xoeenwer"
-        method="POST">
-
-    <label for="nome">Nome e cognome *</label>
-    <input type="text" id="nome" name="nome"
-           placeholder="Nome e cognome" required>
-
-    <label for="azienda">Azienda</label>
-    <input type="text" id="azienda" name="azienda"
-           placeholder="Nome azienda">
-
-    <label for="email">Email *</label>
-    <input type="email" id="email" name="email"
-           placeholder="La tua email" required>
-
-    <label for="telefono">Telefono</label>
-    <input type="tel" id="telefono" name="telefono"
-           placeholder="+39">
-
-    <label for="servizio">Tipo di lavorazione *</label>
-    <select id="servizio" name="servizio" required>
-      <option value="">Seleziona un servizio</option>
-      <option>Strutture metalliche</option>
-      <option>Recinzioni metalliche</option>
-      <option>Cancelli metallici</option>
-      <option>Ringhiere e parapetti</option>
-      <option>Pergole e tettoie</option>
-      <option>Facciate metalliche</option>
-      <option>Scale metalliche</option>
-      <option>Altro</option>
-    </select>
+</section>
 
     <label for="messaggio">Descrizione del progetto *</label>
     <textarea id="messaggio" name="messaggio"
