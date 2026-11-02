@@ -694,9 +694,9 @@
         </div>
 
         <div class="about-image">
-  <img
-    src="images/strutture/capannone-05.png"
-    alt="Realizzazione struttura metallica ADE DI ESTREFI ERJON"
+          <img
+            src="images/strutture/capannone-13.png"
+            alt="Realizzazione struttura metallica ADE DI ESTREFI ERJON"
           >
         </div>
 
@@ -722,7 +722,7 @@
         <div class="service-grid">
 
           <article class="service-card" onclick="openService('strutture')">
-            <img src="images/strutture/capannone-05.png" alt="Strutture metalliche">
+            <img src="images/strutture/capannone-13.png" alt="Strutture metalliche">
             <h3>Strutture Metalliche</h3>
           </article>
 
@@ -901,9 +901,9 @@
   <script>
     const servicePhotos = {
       strutture: Array.from({length: 14}, (_, i) => i + 1)
-  .filter(i => i !== 5)
-  .map(i => `images/strutture/capannone-${String(i).padStart(2, "0")}.png`)
-      ).concat(["images/strutture/carburante%20.png"]),
+        .filter(i => i !== 5)
+        .map(i => `images/strutture/capannone-${String(i).padStart(2, "0")}.png`)
+        .concat(["images/strutture/carburante%20.png"]),
 
       recinzioni: Array.from({length: 14}, (_, i) =>
         `images/recinzioni/recinzioni-${String(i + 1).padStart(2, "0")}.png`
