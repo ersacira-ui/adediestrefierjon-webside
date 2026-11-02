@@ -900,8 +900,9 @@
 
   <script>
     const servicePhotos = {
-      strutture: Array.from({length: 14}, (_, i) =>
-        `images/strutture/capannone-${String(i + 1).padStart(2, "0")}.png`
+      strutture: Array.from({length: 14}, (_, i) => i + 1)
+  .filter(i => i !== 5)
+  .map(i => `images/strutture/capannone-${String(i).padStart(2, "0")}.png`)
       ).concat(["images/strutture/carburante%20.png"]),
 
       recinzioni: Array.from({length: 14}, (_, i) =>
