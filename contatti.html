@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contatti e Preventivi | ADE DI ESTREFI ERJON</title>
+  <meta name="description" content="Contatta ADE DI ESTREFI ERJON per informazioni e preventivi su strutture metalliche, capannoni industriali e lavorazioni in acciaio.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.adediestrefierjon.it/contatti.html">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="site.js"></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero">
+      <h1>Contatti</h1>
+      <p>
+        Raccontaci il tuo progetto e richiedi
+        un preventivo personalizzato.
+      </p>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <span class="section-label">ADE DI ESTREFI ERJON</span>
+          <h2>Parliamo del tuo prossimo progetto.</h2>
+          <p>
+            Dalle strutture metalliche industriali alle
+            lavorazioni su misura, siamo a tua disposizione
+            per trasformare le tue idee in soluzioni concrete.
+          </p>
+          <p>
+            Descrivici il progetto, le dimensioni e le
+            lavorazioni richieste.
+          </p>
+          <h3>Contattaci via email</h3>
+          <a href="mailto:info@adediestrefierjon.it">
+            info@adediestrefierjon.it
+          </a>
+          <p>Sede aziendale: Bari, Italia.</p>
+        </div>
+
+        <div class="contact-form-card">
+          <h2>Richiedi un preventivo</h2>
+          <p>Compila il modulo. Ti ricontatteremo al più presto.</p>
+
+          <form action="https://formspree.io/f/xoeenwer" method="POST">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nome">Nome e cognome *</label>
+                <input type="text" id="nome" name="nome"
+                       placeholder="Mario Rossi" required>
+              </div>
+              <div class="form-field">
+                <label for="azienda">Azienda</label>
+                <input type="text" id="azienda" name="azienda"
+                       placeholder="Nome azienda">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email"
+                       placeholder="nome@azienda.it" required>
+              </div>
+              <div class="form-field">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono"
+                       placeholder="+39">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="localita">Località del progetto</label>
+              <input type="text" id="localita" name="localita"
+                     placeholder="Es. Bari, Roma, Milano">
+            </div>
+
+            <div class="form-field">
+              <label for="servizio">Tipo di lavorazione *</label>
+              <select id="servizio" name="servizio" required>
+                <option value="">Seleziona un servizio</option>
+                <option>Strutture metalliche</option>
+                <option>Recinzioni metalliche</option>
+                <option>Cancelli metallici</option>
+                <option>Ringhiere e parapetti</option>
+                <option>Pergole e tettoie</option>
+                <option>Facciate metalliche</option>
+                <option>Scale metalliche</option>
+                <option>Altro</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="messaggio">Descrizione del progetto *</label>
+              <textarea id="messaggio" name="messaggio" rows="5"
+                        placeholder="Descrivi il tuo progetto, le dimensioni e le lavorazioni richieste..."
+                        required></textarea>
+            </div>
+
+            <input type="hidden" name="_subject"
+                   value="Nuova richiesta preventivo - ADE DI ESTREFI ERJON">
+
+            <button type="submit" class="contact-submit">
+              Invia richiesta di preventivo
+            </button>
+
+            <p class="contact-attachment-note">
+              Hai disegni PDF, DWG o fotografie?
+              Puoi inviarli a
+              <a href="mailto:info@adediestrefierjon.it">
+                info@adediestrefierjon.it
+              </a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
